@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - npotteig
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - npotteig/GodotDrone
+  - npotteig/WDeStuP
+  - sandbornm/DroneAvoidance
+  - blastedryan/447-Petfinder

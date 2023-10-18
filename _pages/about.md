@@ -1,26 +1,27 @@
 ---
 layout: about
-title: about
+title: home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: self.jpeg
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am currently a third-year Computer Science Ph.D. Candidate at Vanderbilt University under the advisorship of [Dr. Xenofon Koutsoukos](https://engineering.vanderbilt.edu/bio/xenofon-koutsoukos). My research primarily revolves around explainable AI, safety, and reinforcement learning for autonomous cyber-physical systems, specifically UAVs. Before starting my academic endeavors at Vanderbilt, I completed a bachelor's degree in Computer Sceince and Mathematics at the University of Maryland, Baltimore County (UMBC). During my time at UMBC, I had the privelege of conducting research in multiple summer undergraduate experiences at the University of Notre Dame, Yale University, and Vanderbilt University. There, I explored topics involving big data workflows, image classification of galaxies, and anomaly detection in vehicle cameras. This led me to enjoy understanding the various facets that machine learning can be applied to solve our society's toughest challenges.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+## Software
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<!-- code for GitHub repositories -->
+{% if site.data.repositories.github_repos %}
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for repo in site.data.repositories.github_repos %}
+    {% include repository/repo.html repository=repo %}
+  {% endfor %}
+</div>
+{% endif %}
